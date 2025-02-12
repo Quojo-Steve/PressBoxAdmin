@@ -1,0 +1,4 @@
+<template>
+  <AppSideBar />
+  <BarChart />
+</template>
