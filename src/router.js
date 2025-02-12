@@ -11,18 +11,18 @@ const routes = [
         path: "",
         component: () => import("./views/SignIn.vue"),
       },
-      {
-        path: "analytics", // Relative to /dashboard
-        component: () => import("./views/Analytics.vue"),
-      },
+    //   {
+    //     path: "analytics", // Relative to /dashboard
+    //     component: () => import("./views/Analytics.vue"),
+    //   },
     ],
   },
   {
     path: "/dashboard",
     component: () => import("./IndexDashboard.vue"),
-    // meta: {
-    //   requiresAuth: true,
-    // },
+    meta: {
+      requiresAuth: true,
+    },
     children: [
       {
         path: "analytics", // Relative to /dashboard

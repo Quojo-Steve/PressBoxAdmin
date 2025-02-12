@@ -125,7 +125,7 @@ const onLogin = async () => {
       const { token } = data.data;
       axios.defaults.headers.common["Authorization"] = `Bearer ${token}`;
       localStorage.setItem("X-Pressbox-Token", token);
-      window.location.href = "/dashboard/analytics";
+      window.location.href = "/analytics";
     }
   } catch (error) {
     toast.error(error.message);
