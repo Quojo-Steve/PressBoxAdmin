@@ -16,9 +16,9 @@ const routes = [
   {
     path: "/dashboard",
     component: () => import("./IndexDashboard.vue"),
-    meta: {
-      requiresAuth: true,
-    },
+    // meta: {
+    //   requiresAuth: true,
+    // },
     children: [
       {
         path: "analytics", // Relative to /dashboard
