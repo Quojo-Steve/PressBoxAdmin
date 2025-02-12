@@ -11,6 +11,10 @@ const routes = [
         path: "",
         component: () => import("./views/SignIn.vue"),
       },
+      {
+        path: "analytics", // Relative to /dashboard
+        component: () => import("./views/Analytics.vue"),
+      },
     ],
   },
   {
